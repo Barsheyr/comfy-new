@@ -4,16 +4,16 @@ import { PageHero, StripeCheckout } from "../components";
 
 // extra imports
 
-// import { useCartContext } from "../context/cart_context";
+import { useCartContext } from "../context/cart_context";
 import { Link } from "react-router-dom";
 
 const CheckoutPage = () => {
-  // const { cart } = useCartContext();
+  const { cart } = useCartContext();
 
   return (
     <main>
       <PageHero title="checkout" />
-      {/* <Wrapper className="page">
+      <Wrapper className="page">
         {cart.length < 1 ? (
           <div className="empty">
             <h2>Your cart is empty</h2>
@@ -24,7 +24,7 @@ const CheckoutPage = () => {
         ) : (
           <StripeCheckout />
         )}
-      </Wrapper> */}
+      </Wrapper>
     </main>
   );
 };

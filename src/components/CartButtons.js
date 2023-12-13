@@ -20,13 +20,13 @@ const CartButton = () => {
       </Link>
       {myUser ? (
         <button
-        // type="button"
-        // className="auth-btn"
-        // onClick={() => {
-        //   clearCart();
-        //   localStorage.removeItem("user");
-        //   logout({ returnTo: window.location.origin });
-        // }}
+          type="button"
+          className="auth-btn"
+          onClick={() => {
+            clearCart();
+            localStorage.removeItem("user");
+            logout({ returnTo: window.location.origin });
+          }}
         >
           Logout <FaUserMinus />
         </button>

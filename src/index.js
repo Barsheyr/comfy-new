@@ -11,11 +11,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <Auth0Provider
-  // domain={process.env.REACT_APP_AUTH_DOMAIN}
-  // clientId={process.env.REACT_APP_CLIENT_ID}
-  // authorizationParams={{
-  //   redirect_uri: `${window.location.origin}/cart`,
-  // }}
+    domain="dev-wkr7guyr7h3j67f8.us.auth0.com"
+    clientId="tZ8uz32VlJVHVoq9Odc2UaN5Y9ZbjnkR"
+    authorizationParams={{
+      redirect_uri: window.location.origin,
+    }}
   >
     <UserProvider>
       <ProductsProvider>
